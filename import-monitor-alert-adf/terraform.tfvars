@@ -1,6 +1,6 @@
 monitor_metric_alerts = {
   Nodes-Availability = {
-    name        = "SHIR Nodes Availability"
+    name        = "Nodes Availability"
     description = "this rule to to monitor the SHIR VMs which used as compute resources for data factory"
     criteria = {
       metric_namespace = "Microsoft.DataFactory/factories"

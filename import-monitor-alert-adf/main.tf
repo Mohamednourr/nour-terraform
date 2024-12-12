@@ -28,3 +28,13 @@ resource "azurerm_monitor_metric_alert" "these" {
     action_group_id = "GROUP_ID"
   }
 }
+
+import {
+  to = azurerm_monitor_metric_alert.this["Nodes-Availability"]
+  id = "ID"
+}
+
+import {
+  to = azurerm_monitor_metric_alert.this["Failure-of-any-pipeline"]
+  id = "ID"
+}
